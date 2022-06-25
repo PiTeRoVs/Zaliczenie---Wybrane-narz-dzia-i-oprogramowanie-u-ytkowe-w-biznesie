@@ -1,0 +1,19 @@
+Zadanie 2 - git:
+
+Jakimi poleceniami zbadałbyś status zmian w repozytorium git: "git status"
+
+
+następnie dodał brakujące pliki(wszystkie): "git add ."
+
+
+potwierdził i wysłał do zdalnego repozytorium(adres dowolny): najpierw musimy scommitować zmiany, by mieć jakieś zmiany do przesłania 'git commit -m "opis zmian' następnie wysłać "git push"
+
+Zadanie 3 - SQL:
+Podpunkt a - Pokaż wszystkie dane o sprzedaży kawy Latte i Long Black bez sprzedaży w Philadelfii
+SELECT * FROM CoffeShop WHERE (Product = 'Latte' or Product = 'Long Black') and City NOT IN ('Philadelphia')
+
+Podpunt b - Pokaż kawy kupione przez william thompson_86 i mark taylor_113
+SELECT DISTINCT Product FROM CoffeShop WHERE 'Customer ref' IN ('william thompson_86', 'mark taylor_113')
+
+Podpunkt c - 
+SELECT DISTINCT City FROM CoffeShop WHERE Product IN ('Capuccino', 'Flat White')
